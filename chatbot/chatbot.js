@@ -30,12 +30,13 @@ module.exports = {
         const jwtClient = new google.auth.JWT(
             config.googleClientEmail,
             null,
-            config.googlePrivateKey,["https://www.googleapis.com/auth/indexing","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/dialogflow"],
+            config.googlePrivateKey,
+            ["https://www.googleapis.com/auth/indexing","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/dialogflow"],
             null
     );
     let tok = "";
-    tok = await jwtClient.authorize();
-    console.log(tok);
+    tok = jwtClient.authorize();
+    console.log("token: "+tok);
     return tok;
     },
 
