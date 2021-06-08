@@ -80,6 +80,7 @@ class Chatbot extends Component {
             if (this.state.clientToken === false) {
                 const res = await axios.get('/api/get_client_token');
                 this.setState({clientToken: res.data.token});
+                console.log("client Token: "+clientToken);
             }
 
             var config = {
