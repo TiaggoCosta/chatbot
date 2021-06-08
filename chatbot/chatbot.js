@@ -34,7 +34,7 @@ module.exports = {
             null
     );
     let tok = "";
-    tok = jwtClient.authorize();
+    tok = await jwtClient.authorize();
     console.log(tok);
     return tok;
     },
