@@ -5,6 +5,7 @@ const config = require('../config/keys');
 const mongoose = require('mongoose');
 
 const googleAuth = require('google-oauth-jwt');
+const {google} = require('googleapis');
 
 const projectId = config.googleProjectID;
 const sessionId = config.dialogFlowSessionID;
