@@ -3,6 +3,7 @@ const dialogflow = require('dialogflow');
 const structjson = require('./structjson.js');
 const config = require('../config/keys');
 const mongoose = require('mongoose');
+const {google} = require('googleapis');
 
 const googleAuth = require('google-oauth-jwt');
 
@@ -26,22 +27,16 @@ const Registration = mongoose.model('registration');
 module.exports = {
 
     getToken: async function() {
-        console.log("getting google token");
-        console.log("config.googleClientEmail: "+config.googleClientEmail);
-        console.log("config.googlePrivateKey: "+config.googlePrivateKey);
-        return new Promise((resolve) => {
-            googleAuth.authenticate(
-                {
-                    email: config.googleClientEmail,
-                    key: config.googlePrivateKey,
-                    scopes: ['https://www.googleapis.com/auth/cloud-platform'],
-                },
-                (err, token) => {
-                    console.log(token);
-                    resolve(token);
-                },
-            );
-        });
+        const jwtClient = new google.auth.JWT(
+            config.googleClientEmail,
+            null,
+            config.googlePrivateKey,["https://www.googleapis.com/auth/indexing","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/dialogflow"],
+            null
+    );
+    let tok = "";
+    tok = jwtClient.authorize();
+    console.log(tok);
+    return tok;
     },
 
     textQuery: async function(text, userID, parameters = {}) {
