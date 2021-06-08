@@ -23,7 +23,8 @@ module.exports = app => {
     app.get('/api/get_client_token', async (req, res) => {
         console.log("on dialogflow routes endpoint");
         let token = await chatbot.getToken();
-        console.log("token on endpoint > "+token);
+        console.log("token on endpoint > "+token.access_token);
+        token = token.access_token;
         res.send({token});
         
     })
