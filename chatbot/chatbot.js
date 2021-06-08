@@ -26,6 +26,9 @@ const Registration = mongoose.model('registration');
 module.exports = {
 
     getToken: async function() {
+        console.log("getting google token");
+        console.log("config.googleClientEmail: "+config.googleClientEmail);
+        console.log("config.googlePrivateKey: "+config.googlePrivateKey);
         return new Promise((resolve) => {
             googleAuth.authenticate(
                 {
@@ -34,6 +37,7 @@ module.exports = {
                     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
                 },
                 (err, token) => {
+                    console.log(token);
                     resolve(token);
                 },
             );
