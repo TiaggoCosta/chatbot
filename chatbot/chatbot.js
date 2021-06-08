@@ -29,8 +29,8 @@ module.exports = {
         console.log("getting google token");
         console.log("config.googleClientEmail: "+config.googleClientEmail);
         console.log("config.googlePrivateKey: "+config.googlePrivateKey);
-        return new Promise((resolve) => {
-            googleAuth.authenticate(
+        return new Promise(async (resolve) => {
+            await googleAuth.authenticate(
                 {
                     email: config.googleClientEmail,
                     key: config.googlePrivateKey,
