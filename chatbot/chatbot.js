@@ -29,19 +29,16 @@ module.exports = {
         console.log("getting google token");
         console.log("config.googleClientEmail: "+config.googleClientEmail);
         console.log("config.googlePrivateKey: "+config.googlePrivateKey);
-        return new Promise(async (resolve) => {
-            await googleAuth.authenticate(
-                {
-                    email: config.googleClientEmail,
-                    key: config.googlePrivateKey,
-                    scopes: ['https://www.googleapis.com/auth/cloud-platform'],
-                },
-                (err, token) => {
-                    console.log(token);
-                    resolve(token);
-                },
-            );
-        });
+        const jwtClient = new google.auth.JWT(
+            config.googleClientEmail,
+            null,
+            config.googlePrivateKey,["https://www.googleapis.com/auth/indexing","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/dialogflow"],
+            null
+    );
+    let tok = "";
+    tok = jwtClient.authorize();
+    console.log("token: "+tok);
+    return tok;
     },
 
     textQuery: async function(text, userID, parameters = {}) {
