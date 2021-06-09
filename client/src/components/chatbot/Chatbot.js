@@ -86,7 +86,7 @@ class Chatbot extends Component {
 
             var config = {
                 headers: {
-                    'Authorization': "Bearer ya29.c.KqMBAwhRsQUHYLUTOMx1YulY7Rdl7UgutdJte5tldqNead44850DXDNMRNtp8FqCkotc7vdHt1Z1m1vQbTtDtQmetNJne9q3-6folBdUa7d7QHjTuBv6d-J3pj0Tysa5ZcQnQ-Jt0UOBUOT_q1d2C59Lr27bidb-y1z5ThsgswMEataXgD1pt0C1C3OX9grfJfo7tg_ptlIKv888iwrzjddN6es6bA",
+                    'Authorization': "Bearer ya29.c.KqYBAwg0e7kPqcODlWqSgEBrqY9HwfgmcO7lO41YryOExC_fQI7R10MqH6FnnLRRvKQkxoCiNG6J1TpLBvLBN0pcZcMqUR7njeO8bm11jUDPfZWPryA3e5kVxe5YV_Il-ZH5cNYXanWQ60YUWomlFwOOX9tb6tkk4dU9sPbvz9TsnMxvPX2pTUN1SbDUxob6f5zrvqI6EwKJTNdjNU6EVsk0bgbOlRp-jw",
                     'Content-Type': 'application/json; charset=utf-8'
                 }
             };
