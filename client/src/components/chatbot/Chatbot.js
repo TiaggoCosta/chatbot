@@ -79,7 +79,7 @@ class Chatbot extends Component {
 
             if (this.state.clientToken === false) {
                 console.log("on df_client_call")
-                const res = await axios.get('http://feira-getkey.herokuapp.com/promise');
+                const res = await axios.get('https://feira-getkey.herokuapp.com/promise');
                 this.setState({clientToken: res.data});
                 console.log("client Token: "+res.data);
             }
