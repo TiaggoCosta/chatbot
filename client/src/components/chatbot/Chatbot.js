@@ -86,7 +86,7 @@ class Chatbot extends Component {
 
             var config = {
                 headers: {
-                    'Authorization': "Bearer " + this.state.clientToken,
+                    'Authorization': "Bearer ya29.c.KqMBAwhRsQUHYLUTOMx1YulY7Rdl7UgutdJte5tldqNead44850DXDNMRNtp8FqCkotc7vdHt1Z1m1vQbTtDtQmetNJne9q3-6folBdUa7d7QHjTuBv6d-J3pj0Tysa5ZcQnQ-Jt0UOBUOT_q1d2C59Lr27bidb-y1z5ThsgswMEataXgD1pt0C1C3OX9grfJfo7tg_ptlIKv888iwrzjddN6es6bA",
                     'Content-Type': 'application/json; charset=utf-8'
                 }
             };
