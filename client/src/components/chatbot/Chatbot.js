@@ -77,14 +77,16 @@ class Chatbot extends Component {
 
         try {
 
-            if (this.state.clientToken === false) {
-                const res = await axios.get('/api/get_client_token');
-                this.setState({clientToken: res.data.token});
-            }
+            // if (this.state.clientToken === false) {
+            //     console.log("on df_client_call")
+            //     const res = await axios.get('/api/get_client_token');
+            //     this.setState({clientToken: res.data.token});
+            //     console.log("client Token: "+res.data.token);
+            // }
 
             var config = {
                 headers: {
-                    'Authorization': "Bearer " + this.state.clientToken,
+                    'Authorization': "Bearer ya29.c.KqYBAwg0e7kPqcODlWqSgEBrqY9HwfgmcO7lO41YryOExC_fQI7R10MqH6FnnLRRvKQkxoCiNG6J1TpLBvLBN0pcZcMqUR7njeO8bm11jUDPfZWPryA3e5kVxe5YV_Il-ZH5cNYXanWQ60YUWomlFwOOX9tb6tkk4dU9sPbvz9TsnMxvPX2pTUN1SbDUxob6f5zrvqI6EwKJTNdjNU6EVsk0bgbOlRp-jw",
                     'Content-Type': 'application/json; charset=utf-8'
                 }
             };
