@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "9.7.1",
+    "node": "10.10.0",
     "npm": "6.4.1"
   },
   "scripts": {
@@ -17,12 +17,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/dialogflow": "^3.5.0",
     "actions-on-google": "^2.12.0",
     "body-parser": "^1.19.0",
     "dialogflow": "^0.13.0",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.17.1",
     "google-oauth-jwt": "^0.2.0",
+    "googleapis": "^75.0.0",
     "mongoose": "^5.7.8"
   },
   "devDependencies": {

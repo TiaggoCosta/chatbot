@@ -13,8 +13,7 @@ require('./models/Coupons');
 
 
 app.use(bodyParser.json());
-
-require('./routes/dialogFlowRoutes')(app);
+require('./routes/dialogflowRoutes')(app);
 require('./routes/fulfillmentRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
