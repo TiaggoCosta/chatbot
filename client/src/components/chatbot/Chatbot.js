@@ -77,12 +77,12 @@ class Chatbot extends Component {
 
         try {
 
-            if (this.state.clientToken === false) {
-                console.log("on df_client_call")
-                const res = await axios.get('/api/get_client_token');
-                this.setState({clientToken: res.data.token});
-                console.log("client Token: "+res.data.token);
-            }
+            // if (this.state.clientToken === false) {
+            //     console.log("on df_client_call")
+            //     const res = await axios.get('/api/get_client_token');
+            //     this.setState({clientToken: res.data.token});
+            //     console.log("client Token: "+res.data.token);
+            // }
 
             var config = {
                 headers: {
