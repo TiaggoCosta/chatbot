@@ -49,7 +49,7 @@ class Chatbot extends Component {
             queryInput: {
                 text: {
                     text: text,
-                    languageCode: 'en-US',
+                    languageCode: 'pt-BR',
                 },
             }
         };
@@ -64,7 +64,7 @@ class Chatbot extends Component {
             queryInput: {
                 event: {
                     name: event,
-                    languageCode: 'en-US',
+                    languageCode: 'pt-BR',
                 },
             }
         };
