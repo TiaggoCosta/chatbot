@@ -19,7 +19,7 @@ const About = () => (
 
             <div className="column">
                 <div className="card">
-                    <img src="https://avatars0.githubusercontent.com/u/38010089?s=300&v=4" alt="Nadine" style={{width:'100%', height:'50%'}}/>
+                    <img src="https://avatars0.githubusercontent.com/u/38010089?s=300&v=4" alt="Nadine" style={{width:'100%'}}/>
                     <div className="container">
                         <p className="about-text"><b>Nadine Schneider</b></p>
                         <p className="about-text" style={{justifyContent: 'center', fontSize: '80%'}}>nadineschneider@edu.unisinos.br</p>
