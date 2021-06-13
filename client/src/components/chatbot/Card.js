@@ -13,7 +13,7 @@ const Card = (props) => {
                     <p> <a href="/">{props.payload.price}</a></p>
                 </div>
                 <div className="card-action">
-                    <a target="_blank" rel="noopener noreferrer" href={props.payload.link}>GET NOW</a>
+                    <a target="_blank" rel="noopener noreferrer" href={props.payload.link}>Comprar agora!</a>
                 </div>
             </div>
         </div>
