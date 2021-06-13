@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-    <nav>
+    <nav style={{ backgroundColor: '#26a69a'}}>
         <div className="nav-wrapper">
             <Link to={'/'} className="brand-logo"> Cursos de TI</Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
