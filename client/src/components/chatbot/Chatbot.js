@@ -119,7 +119,7 @@ class Chatbot extends Component {
                     speaks: 'bot',
                     msg: {
                         text : {
-                            text: "I'm having troubles. I need to terminate. will be back later"}
+                            text: "Estou comproblemas, volto mais tarde."}
                     }
                 }
                 this.setState({ messages: [...this.state.messages, says]});
@@ -272,7 +272,7 @@ class Chatbot extends Component {
                         </div>
                     </div>
                     <div className=" col s12" >
-                        <input style={{margin: 0, paddingLeft: '1%', paddingRight: '1%', width: '98%'}} ref={(input) => { this.talkInput = input; }} placeholder="type a message:"  onKeyPress={this._handleInputKeyPress} id="user_says" type="text" />
+                        <input style={{margin: 0, paddingLeft: '1%', paddingRight: '1%', width: '98%'}} ref={(input) => { this.talkInput = input; }} placeholder="escreva uma mensagem:"  onKeyPress={this._handleInputKeyPress} id="user_says" type="text" />
                     </div>
 
                 </div>
