@@ -259,7 +259,7 @@ class Chatbot extends Component {
                         <div className="nav-wrapper" style={{ backgroundColor: '#26a69a'}}>
                             <a href="/" className="brand-logo" style={{marginLeft:'15px'}}>ChatBot</a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
-                                <li><a href="/" onClick={this.hide}>Close</a></li>
+                                <li><a href="/" onClick={this.hide}>Fechar</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -284,7 +284,7 @@ class Chatbot extends Component {
                         <div className="nav-wrapper" style={{ backgroundColor: '#26a69a'}}>
                             <a href="/" className="brand-logo" style={{marginLeft:'15px'}}>ChatBot</a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
-                                <li><a href="/" onClick={this.show}>Show</a></li>
+                                <li><a href="/" onClick={this.show}>Mostrar</a></li>
                             </ul>
                         </div>
                     </nav>
