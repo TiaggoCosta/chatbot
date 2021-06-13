@@ -173,7 +173,7 @@ class Chatbot extends Component {
     hide(event) {
         event.preventDefault();
         event.stopPropagation();
-        this.setState({showBot: true});
+        this.setState({showBot: false});
     }
 
     _handleQuickReplyPayload(event, payload, text) {
