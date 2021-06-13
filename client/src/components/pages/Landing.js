@@ -5,8 +5,8 @@ const Landing = () => (
            
             <div className="text-box">
                 <h1 className="heading-primary">
-                    <span className="heading-primary-main">Outdoors</span>
-                    <span className="heading-primary-sub">is where life happens</span>
+                    <span className="heading-primary-main">Cursos de TI</span>
+                    <span className="heading-primary-sub">para alavancar a sua carreira!</span>
                 </h1>
 
             </div>
