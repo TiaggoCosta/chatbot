@@ -3,7 +3,7 @@ import React from 'react';
 const Landing = () => (
     <header className="header">
             <div className="logo-box">
-                <img src="img/logo-white.png" alt="Logo" className="logo"/>
+                <img src={require("../../img/logo-white.png")} alt="Logo" className="logo"/>
             </div>
 
             <div className="text-box">
