@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => (
     <nav style={{ backgroundColor: '#26a69a'}}>
         <div className="nav-wrapper">
-            <Link to={'/'} className="brand-logo">Inicio</Link>
+            <Link to={'/'} className="brand-logo" style={{marginLeft:'15px'}}>Inicio</Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li><Link to={'/shop'}>Comprar</Link></li>
                 <li><Link to={'/about'}>Sobre</Link></li>
